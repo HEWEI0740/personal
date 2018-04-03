@@ -11,19 +11,22 @@
 
 	</head>
 
-	<body  style="background:url('../images/wechat.gif')">
+	<body>
 		<!-- #include file="main.html" -->
 		<!--#include virtual="file.asp"-->
 		<script src="../mui/js/mui.min.js"></script>
     <script>
     var btnArray = ['非常帅', '帅爆了'];
 						mui.confirm('<font color=red>我是个什么样的人?</font> ', '请摸着良心选择', btnArray, function(e) {
-								mui.alert("你很\"城市\"，看来你是灰常想了解我了","答对了","怀着神肾的心情看",function(){
+								mui.alert("我喜欢你的诚实，看来你是灰常想了解我了","答对了","怀着神肾的心情看",function(){
                   mui.openWindow({
                     url:"http://www.5xh0.com"
                   });
                 });
 						});
+        mui("body")[0].style.background="url('../images/wechat.jpg') fixed center center no-repeat";
+        mui("body")[0].style.backgroundSize="contain";
+        mui("body")[0].style.with="100%";
     </script>
 	</body>
 
