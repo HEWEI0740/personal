@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<title>喜欢你没道理</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../mui/css/mui.min.css" rel="stylesheet" />
+
+	</head>
+
+	<body  style="background:url('../images/wechat.gif')">
+		<!-- #include file="main.html" -->
+		<!--#include virtual="file.asp"-->
+		<script src="../mui/js/mui.min.js"></script>
+    <script>
+    var btnArray = ['非常帅', '帅爆了'];
+						mui.confirm('<font color=red>我是个什么样的人?</font> ', '请摸着良心选择', btnArray, function(e) {
+								mui.alert("你很\"城市\"，看来你是灰常想了解我了","答对了","怀着神肾的心情看",function(){
+                  mui.openWindow({
+                    url:"http://www.5xh0.com"
+                  });
+                });
+						});
+    </script>
+	</body>
+
+</html>
